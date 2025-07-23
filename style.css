@@ -118,6 +118,42 @@ font-size: 1.37rem;
     color: rgba(17, 17, 17, 1);
 }
 
+/*Plants-Lover-Section-content*/
+.Plants-Lover-Section{
+    position: relative;
+}
+.Plants-Lover-Section-verifcation-logo{
+    position:absolute;
+    top: -90px;
+    right: 500px;
+    width: 270px;
+    height: 270px;
+}
+.Plants-Lover-Section-content{
+    margin-top: 210px;
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 0px;
+}
+.Plants-Lover-Section-content img{
+    width: 100%;
+}
+.Plants-Lover-Section-content h1{
+    font-weight: 700;
+    font-size: 3.125rem;
+    color: rgba(0, 0, 0, 1);
+}
+.Plants-Lover-Section-content ul li{
+    font-weight: 400;
+    font-size: 1.4;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+}
+.Plants-Lover-Section-content-right{
+    margin-top: 20px;
+    max-width: 540px;
+}
+
 /*mobile responsive*/
 @media screen and (max-width:576px) {
     li.hide{
@@ -128,13 +164,16 @@ font-size: 1.37rem;
         padding: 0px;
     }
     .banner h1{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 .banner p{
     font-size: 0.9rem;
 }
 .banner-content{
     padding: 4px 16px 4px 16px;
+}
+.card-section-title h1{
+    font-size: 1.5rem;
 }
 .card-section-title{
     padding: 0px 28px;
@@ -146,5 +185,17 @@ font-size: 1.37rem;
 }
 .card-section .cards button{
     width: 170px;
+}
+.Plants-Lover-Section-content{
+    flex-direction: column;
+    margin: 0px;
+    gap: 0px;
+}
+.Plants-Lover-Section-content ul li{
+    padding: 10px;
+    margin-top: 10px;
+}
+.Plants-Lover-Section-content h1{
+    font-size: 1.7rem;
 }
 }
