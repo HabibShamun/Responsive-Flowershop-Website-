@@ -17,11 +17,21 @@
 /*shared styles*/
 .header-span{
     color: rgba(233, 90, 8, 1.00);
-
 }
 header,main{
     max-width: 1140px;
     margin: 0px auto;
+}
+
+.btn-primary{
+    
+    width: 270px;
+    height: 50px;
+    border: none;
+    background-color: rgba(233, 90, 8, 1);
+    color:rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: 600;
 }
 /*body*/
 body{
@@ -72,7 +82,41 @@ body{
 .banner .img-container{
     width: 100%;
 }
-
+/* card-section*/
+.card-section-title{
+    text-align: center;
+}
+.card-section-title h1{
+    font-size: 3.12rem;
+    font-weight: 700;
+}
+.card-section-title p{
+    font-weight: 400;
+    font-size: 1.37;
+    color: rgba(0, 0, 0, 0.5);
+    
+}
+.card-section .cards{
+    width: 270px;
+    margin-top: 49px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    text-align: center;
+}
+.card-section .cards img{
+    width: 100%;
+}
+.card-section .cards h3{
+    font-size: 1.37rem;
+    font-weight: 500;
+    color: rgba(17, 17, 17, 1);
+}
+.card-section .cards h2{
+font-size: 1.37rem;
+    font-weight: 700;
+    color: rgba(17, 17, 17, 1);
+}
 
 /*mobile responsive*/
 @media screen and (max-width:576px) {
@@ -91,5 +135,16 @@ body{
 }
 .banner-content{
     padding: 4px 16px 4px 16px;
+}
+.card-section-title{
+    padding: 0px 28px;
+}
+.card-section .cards{
+ grid-template-columns: repeat(2,1fr);
+ width: 170px;
+ padding: 14px 28px;
+}
+.card-section .cards button{
+    width: 170px;
 }
 }
