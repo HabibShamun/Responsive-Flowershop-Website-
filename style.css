@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*fonts*/
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;;
+  font-style: normal;
+}
+
+/*shared styles*/
+.header-span{
+    color: rgba(233, 90, 8, 1.00);
+
+}
+header,main{
+    max-width: 1140px;
+    margin: 0px auto;
+}
+/*body*/
+body{
+    background-color: #f5f8ff;
+}
+/*header*/
+
+/*nav*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    list-style: none;
+   color: rgba(137, 135, 161, 1);
+}
+.navbar ul a{
+     text-decoration: none;
+     color: rgba(137, 135, 161, 1);
+}
+.navbar ul .nav-ul-dark{
+    color: rgba(37, 36, 50, 1);
+}
+
+/*banner*/
+
+.banner{
+    padding-top: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    font-weight: 700;
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 1.00);
+}
+.banner p{
+    font-weight: 400;
+    font-size: 1.37rem;
+    color: rgba(0, 0, 0, 0.50)
+}
+.banner .img-container{
+    width: 100%;
+}
+
+
+/*mobile responsive*/
+@media screen and (max-width:576px) {
+    li.hide{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+    .banner h1{
+    font-size: 1.5rem;
+}
+.banner p{
+    font-size: 0.9rem;
+}
+.banner-content{
+    padding: 4px 16px 4px 16px;
+}
+}
