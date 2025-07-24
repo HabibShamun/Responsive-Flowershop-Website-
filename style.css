@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 /*fonts*/
 .noto-serif-font {
   font-family: "Noto Serif", serif;
@@ -225,6 +228,42 @@ font-size: 1.37rem;
 /*join section*/
 
 
+.join-section-content{
+background-image: url("./assets/news-letter-bg.png");
+text-align: center;
+padding: 200px 300px;
+background-position: center;
+background-size: cover;
+}
+.join-section-content form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.join-section-content h1{
+    font-weight: 700;
+    font-size: 3.125rem;
+    color: rgba(255, 255, 255, 1);
+}
+.join-section-content input[type="email"]{
+   margin: 0px;
+width:544px;
+height: 50px;
+border: none;
+outline: none;
+padding-left: 20px;
+}
+
+.join-section-content label button{
+      width: 186px;
+    height: 50px;
+    border: none;
+    background-color: rgba(233, 90, 8, 1);
+    color:rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: 600;
+}
 
 /*mobile responsive*/
 @media screen and (max-width:576px) {
@@ -285,5 +324,19 @@ font-size: 1.37rem;
 .deal-section-grid-container-right .text a{
     font-size: 1.25rem;
 }
-
+.join-section-content{
+    padding: 110px 36px 65px;
+    margin: 0px;
+}
+.join-section-content h1{
+    font-size: 1.5rem;
+}
+.join-section-content input[type="email"]{
+    width: 100%;
+    margin-top: 20px;
+}
+.join-section-content label button{
+    width: 100%;
+    margin-top: 20px;
+}
 }
