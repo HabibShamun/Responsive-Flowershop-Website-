@@ -156,7 +156,7 @@ font-size: 1.37rem;
     right: 500px;
     width: 270px;
     height: 270px;
-    animation: logo 2s linear infinite;
+    animation: logo 4s linear infinite;
 
 }
 .Plants-Lover-Section-content{
@@ -433,6 +433,7 @@ margin: 0px auto;
 .join-section-content label button{
     width: 100%;
     margin-top: 20px;
+    padding: 10px;
 }
 .footer-Section{
     flex-direction: column;
