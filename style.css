@@ -87,6 +87,7 @@ margin-bottom: 30px;
     font-weight: 700;
     font-size: 4rem;
     color: rgba(0, 0, 0, 1.00);
+    margin-bottom: 10px;
 }
 .banner p{
     font-weight: 400;
@@ -160,8 +161,9 @@ font-size: 1.37rem;
     width: 270px;
     height: 270px;
     animation: logo 4s linear infinite;
-
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.12));
 }
+
 .Plants-Lover-Section-content{
     margin-top: 150px;
     display: flex;
