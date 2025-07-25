@@ -106,6 +106,7 @@ margin-bottom: 30px;
     font-size: 3.12rem;
     font-weight: 700;
 }
+
 .card-section-title p{
     font-weight: 400;
     font-size: 1.37;
@@ -122,6 +123,7 @@ margin-bottom: 30px;
 }
 .card-section .cards img{
     width: 100%;
+    margin-bottom: 10px;
 }
 .card-section .cards h3{
     font-size: 1.37rem;
@@ -132,11 +134,21 @@ margin-bottom: 30px;
 font-size: 1.37rem;
     font-weight: 700;
     color: rgba(17, 17, 17, 1);
+    margin: 10px 0px 20px;
+
 }
 
 /*Plants-Lover-Section-content*/
 .Plants-Lover-Section{
     position: relative;
+}
+@keyframes logo {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 .Plants-Lover-Section-verifcation-logo{
     position:absolute;
@@ -144,6 +156,8 @@ font-size: 1.37rem;
     right: 500px;
     width: 270px;
     height: 270px;
+    animation: logo 2s linear infinite;
+
 }
 .Plants-Lover-Section-content{
     margin-top: 150px;
@@ -169,6 +183,8 @@ font-size: 1.37rem;
     margin-top: 20px;
     max-width: 540px;
 }
+
+
 
 /* deal-section*/
 .latest-deal-section{
@@ -249,7 +265,6 @@ text-align: center;
 padding: 200px 300px;
 background-position: center;
 background-size: cover;
-margin-bottom: ;
 }
 .join-section-content form{
     display: flex;
@@ -355,8 +370,14 @@ margin: 0px auto;
 .card-section .cards button{
     width: 170px;
 }
+.btn-primary:hover{
+    background-color: rgb(240, 128, 63);
+}
 .Plants-Lover-Section{
     margin: 30px;
+}
+.Plants-Lover-Section-verifcation-logo{
+    display: none;
 }
 .Plants-Lover-Section-content{
     flex-direction: column;
@@ -369,6 +390,19 @@ margin: 0px auto;
 }
 .Plants-Lover-Section-content h1{
     font-size: 1.7rem;
+}
+.latest-deal-section .title{
+    margin: 20px;
+
+}
+.latest-deal-section .title h1{
+    font-size: 2.125rem;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+.latest-deal-section .title p{
+    font-size: 1.1rem;
+    margin-bottom: 60px;
 }
 .deal-section-grid-container{
     grid-template-columns: 1fr;
