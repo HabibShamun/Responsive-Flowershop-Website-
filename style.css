@@ -25,7 +25,7 @@
 header,.card-section,.latest-deal-section,.Plants-Lover-Section{
     max-width: 1140px;
     margin: 0px auto;
-   
+   box-sizing: border-box;
 }
 
 .btn-primary{
@@ -117,7 +117,7 @@ margin-bottom: 30px;
     
 }
 .card-section .cards{
-    width: 270px;
+    width: 100%;
     margin-top: 49px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -371,22 +371,29 @@ font-size: 1rem;
 .card-section-title h1{
     font-size: 1.5rem;
 }
-.card-section-title{
-    padding: 0px 28px;
+
+.card-section{
+    padding: 20px;
 }
 .card-section .cards{
  grid-template-columns: repeat(2,1fr);
- width: 170px;
- padding: 14px 28px;
+ width: 100%;
+ 
+
+}
+.card-section .card{
+    width: 100%;
+    
 }
 .card-section .cards button{
-    width: 170px;
+    width: 100%;
+
 }
 .btn-primary:hover{
     background-color: rgb(240, 128, 63);
 }
 .Plants-Lover-Section{
-    margin: 30px;
+   padding: 20px;
 }
 .Plants-Lover-Section-verifcation-logo{
     display: none;
@@ -396,9 +403,9 @@ font-size: 1rem;
     margin: 0px;
     gap: 0px;
 }
-.Plants-Lover-Section-content ul li{
-    padding: 10px;
-    margin-top: 10px;
+.Plants-Lover-Section-content ul{
+   padding: 30px;
+
 }
 .Plants-Lover-Section-content h1{
     font-size: 1.7rem;
