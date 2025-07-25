@@ -47,8 +47,8 @@ body{
     background-color: #f5f8ff;
 }
 /*header*/
-header{
-     padding: 20px;
+header nav{
+    padding: 20px;
 }
 header .img-container{
 margin-bottom: 30px;
@@ -94,6 +94,9 @@ margin-bottom: 30px;
     color: rgba(0, 0, 0, 0.50)
 }
 .banner .img-container{
+    width: 100%;
+}
+.banner .img-container img{
     width: 100%;
 }
 /* card-section*/
@@ -355,6 +358,15 @@ margin: 0px auto;
 }
 .banner-content{
     padding: 4px 16px 4px 16px;
+}
+.card-section .cards h3{
+    font-size: 1rem;
+  
+}
+.card-section .cards h2{
+font-size: 1rem;
+
+
 }
 .card-section-title h1{
     font-size: 1.5rem;
