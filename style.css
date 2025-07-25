@@ -343,6 +343,10 @@ margin: 0px auto;
 
 /*mobile responsive*/
 @media screen and (max-width:576px) {
+    .cart{
+        margin-top: 25px;
+        font-size: 1.2rem;
+    }
     li.hide{
         display: none;
     }
