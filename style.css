@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -24,6 +25,7 @@
 header,.card-section,.latest-deal-section,.Plants-Lover-Section{
     max-width: 1140px;
     margin: 0px auto;
+   
 }
 
 .btn-primary{
@@ -35,13 +37,22 @@ header,.card-section,.latest-deal-section,.Plants-Lover-Section{
     color:rgba(255, 255, 255, 1);
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color: rgb(240, 128, 63);
 }
 /*body*/
 body{
     background-color: #f5f8ff;
 }
 /*header*/
-
+header{
+     padding: 20px;
+}
+header .img-container{
+margin-bottom: 30px;
+}
 /*nav*/
 
 .navbar{
@@ -86,7 +97,9 @@ body{
     width: 100%;
 }
 /* card-section*/
+
 .card-section-title{
+    margin-top: 50px;
     text-align: center;
 }
 .card-section-title h1{
@@ -133,7 +146,7 @@ font-size: 1.37rem;
     height: 270px;
 }
 .Plants-Lover-Section-content{
-    margin-top: 210px;
+    margin-top: 150px;
     display: flex;
     justify-content: space-between;
     padding: 38px 0px;
@@ -185,6 +198,7 @@ font-size: 1.37rem;
     width: 100%;
     height: 100%;
     border-radius: 14px;
+    filter: brightness(50%);
 }
 .deal-section-grid-container-left{
     display: grid;
@@ -228,12 +242,14 @@ font-size: 1.37rem;
 /*join section*/
 
 
+
 .join-section-content{
 background-image: url("./assets/news-letter-bg.png");
 text-align: center;
 padding: 200px 300px;
 background-position: center;
 background-size: cover;
+margin-bottom: ;
 }
 .join-section-content form{
     display: flex;
@@ -263,7 +279,49 @@ padding-left: 20px;
     color:rgba(255, 255, 255, 1);
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
 }
+.join-section-content label button:hover{
+    background-color: rgb(240, 128, 63);
+}
+
+/*footer section*/
+
+.footer-Section{
+max-width: 1140px;
+margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+   
+}
+.footer-Section .icon{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-Section .content{
+    max-width: 359px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer-Section .ul-container {
+    display: flex;
+    gap: 110px;
+    
+}
+.footer-Section .ul-container li{
+    list-style: none;
+    margin-bottom: 32px;
+}
+.footer-Section .ul-container a{
+    text-decoration: none;
+    color: rgba(107, 114, 128, 1);
+    
+}
+
 
 /*mobile responsive*/
 @media screen and (max-width:576px) {
@@ -296,6 +354,9 @@ padding-left: 20px;
 }
 .card-section .cards button{
     width: 170px;
+}
+.Plants-Lover-Section{
+    margin: 30px;
 }
 .Plants-Lover-Section-content{
     flex-direction: column;
@@ -338,5 +399,15 @@ padding-left: 20px;
 .join-section-content label button{
     width: 100%;
     margin-top: 20px;
+}
+.footer-Section{
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    
+}
+.footer-Section .ul-container{
+    flex-direction: column;
+    gap: 10px;
 }
 }
